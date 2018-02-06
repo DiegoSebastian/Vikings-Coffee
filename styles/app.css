@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padidng: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -18,8 +18,8 @@ header {
   width: 100%;
   background: url("../images/bg-vikings-brown.jpg") #281a0c;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center -250px; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   header .container {
     position: relative;
     height: 700px; }
@@ -262,3 +262,9 @@ footer {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; } }
+
+@media screen and (min-width: 1500px) {
+  header {
+    background-position: center -250px;
+  }
+}
